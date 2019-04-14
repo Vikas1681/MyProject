@@ -8,7 +8,7 @@ import com.PacificPower.PageObjects.FacebookHomePage;
 import com.PacificPower.Views.FacebookHomeView;
 import com.PacificPower.generic.BaseTest;
 
-public class FacebookTest extends BaseTest{
+public class  FacebookTest extends BaseTest{
 	
 	FacebookHomeView objFacebookHomeView;
 

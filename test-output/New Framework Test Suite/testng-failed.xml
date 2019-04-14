@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [New Framework Test Suite]">
+  <listeners>
+    <listener class-name="com.PacificPower.genericUtility.CustomReporting"/>
+  </listeners>
+  <test thread-count="5" name="Pacific Power(failed)">
+    <classes>
+      <class name="com.PacificPower.genericUtility.BaseTest">
+        <methods>
+          <include name="initialiseWebEnvironment"/>
+        </methods>
+      </class> <!-- com.PacificPower.genericUtility.BaseTest -->
+    </classes>
+  </test> <!-- Pacific Power(failed) -->
+</suite> <!-- Failed suite [New Framework Test Suite] -->

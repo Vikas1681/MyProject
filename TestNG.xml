@@ -8,7 +8,8 @@
 	
 	<test name= "Pacific Power">
 	<classes>
-		<class name="com.PacificPower.generic.BaseTest"/>
+		<class name="com.PacificPower.Test.FacebookTest"/>
+		<class name="com.PacificPower.Test.FacebookTest2"/>
 	</classes>
 	</test>
 	</suite>

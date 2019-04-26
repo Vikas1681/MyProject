@@ -3,7 +3,6 @@ package com.PacificPower.Test;
 import java.lang.reflect.Method;
 
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -11,7 +10,7 @@ import org.testng.annotations.Test;
 import com.PacificPower.Views.FacebookHomeView;
 import com.PacificPower.generic.BaseTest;
 
-public class FacebookTest extends BaseTest {
+public class FacebookTest2 extends BaseTest{
 
 	FacebookHomeView objFacebookHomeView;
 
@@ -27,13 +26,13 @@ public class FacebookTest extends BaseTest {
 	}
 
 	@Test
-	public void facebookTest1() {
+	public void facebookTest2() {
 		loadTestData("100");
 		objFacebookHomeView.clickFacebookHomePageEmailField();
 	}
 
 	@Test
-	public void clickOnDummy() {
+	public void clickOnDummy1() {
 		objFacebookHomeView.clickOnDummy();
 	}
 

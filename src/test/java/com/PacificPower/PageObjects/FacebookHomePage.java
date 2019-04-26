@@ -16,8 +16,7 @@ public class FacebookHomePage {
 	}
 
 	public void clickFacebookHomePageEmailField() {
-		System.out.println(objPojo.getObjCommonFunction());
-		objPojo.getObjCommonFunction().click(inpEmailOrPhone);
+		//objPojo.getObjCommonFunction().click(inpEmailOrPhone);
 		objPojo.getObjUtility().verifyResult("click on email field",objPojo.getObjCommonFunction().click(inpEmailOrPhone));
 	}
 

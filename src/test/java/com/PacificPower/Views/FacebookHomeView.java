@@ -14,9 +14,7 @@ public class FacebookHomeView {
 	}
 
 	public void clickFacebookHomePageEmailField() {
-		System.out.println("excelObject"+objPojo.getObjExcelHelper());
 		String testData = objPojo.getObjExcelHelper().dpString("NAME");
-		System.out.println("testData is"+testData);
 		if(!testData.equals("")) {
 			objFacebookHomePage.clickFacebookHomePageEmailField();
 			objFacebookHomePage.setFacebookHomePageEmail(testData);

@@ -1,29 +1,199 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7923" started-at="2019-04-14T11:49:38Z" finished-at="2019-04-14T11:49:46Z">
+  <suite started-at="2019-04-25T07:18:14Z" name="New Framework Test Suite" finished-at="2019-04-25T07:18:43Z" duration-ms="28904">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7923" started-at="2019-04-14T11:49:38Z" finished-at="2019-04-14T11:49:46Z">
+    <test started-at="2019-04-25T07:18:14Z" name="Pacific Power" finished-at="2019-04-25T07:18:43Z" duration-ms="28904">
       <class name="com.PacificPower.Test.FacebookTest">
-        <test-method status="PASS" signature="setUpEnvironment()[pri:0, instance:com.PacificPower.Test.FacebookTest@239963d8]" name="setUpEnvironment" is-config="true" duration-ms="6295" started-at="2019-04-14T11:49:38Z" finished-at="2019-04-14T11:49:45Z">
+        <test-method is-config="true" signature="generateExtentReport()[pri:0, instance:com.PacificPower.Test.FacebookTest@4e268090]" started-at="2019-04-25T07:18:14Z" name="generateExtentReport" finished-at="2019-04-25T07:18:14Z" duration-ms="239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateExtentReport -->
+        <test-method is-config="true" signature="setUpEnvironment()[pri:0, instance:com.PacificPower.Test.FacebookTest@4e268090]" started-at="2019-04-25T07:18:14Z" name="setUpEnvironment" finished-at="2019-04-25T07:18:31Z" duration-ms="16283" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpEnvironment -->
-        <test-method status="PASS" signature="clickOnDummy()[pri:0, instance:com.PacificPower.Test.FacebookTest@239963d8]" name="clickOnDummy" duration-ms="687" started-at="2019-04-14T11:49:45Z" finished-at="2019-04-14T11:49:45Z">
+        <test-method is-config="true" signature="berforeMethod(java.lang.reflect.Method)[pri:0, instance:com.PacificPower.Test.FacebookTest@4e268090]" started-at="2019-04-25T07:18:31Z" name="berforeMethod" finished-at="2019-04-25T07:18:31Z" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.PacificPower.Test.FacebookTest.clickOnDummy()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- berforeMethod -->
+        <test-method signature="clickOnDummy()[pri:0, instance:com.PacificPower.Test.FacebookTest@4e268090]" started-at="2019-04-25T07:18:31Z" name="clickOnDummy" finished-at="2019-04-25T07:18:31Z" duration-ms="418" status="FAIL">
+          <exception class="junit.framework.AssertionFailedError">
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError
+at junit.framework.Assert.fail(Assert.java:47)
+at junit.framework.Assert.assertTrue(Assert.java:20)
+at junit.framework.Assert.assertTrue(Assert.java:27)
+at com.PacificPower.Utility.Utility.verifyResult(Utility.java:51)
+at com.PacificPower.PageObjects.FacebookHomePage.clickOnDummy(FacebookHomePage.java:24)
+at com.PacificPower.Views.FacebookHomeView.clickOnDummy(FacebookHomeView.java:25)
+at com.PacificPower.Test.FacebookTest.clickOnDummy(FacebookTest.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnDummy -->
-        <test-method status="PASS" signature="facebookTest1()[pri:0, instance:com.PacificPower.Test.FacebookTest@239963d8]" name="facebookTest1" duration-ms="306" started-at="2019-04-14T11:49:45Z" finished-at="2019-04-14T11:49:46Z">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.PacificPower.Test.FacebookTest@4e268090]" started-at="2019-04-25T07:18:31Z" name="afterMethod" finished-at="2019-04-25T07:18:31Z" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="berforeMethod(java.lang.reflect.Method)[pri:0, instance:com.PacificPower.Test.FacebookTest@4e268090]" started-at="2019-04-25T07:18:31Z" name="berforeMethod" finished-at="2019-04-25T07:18:31Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.PacificPower.Test.FacebookTest.facebookTest1()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- berforeMethod -->
+        <test-method signature="facebookTest1()[pri:0, instance:com.PacificPower.Test.FacebookTest@4e268090]" started-at="2019-04-25T07:18:31Z" name="facebookTest1" finished-at="2019-04-25T07:18:32Z" duration-ms="417" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- facebookTest1 -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.PacificPower.Test.FacebookTest@239963d8]" name="afterClass" is-config="true" duration-ms="608" started-at="2019-04-14T11:49:46Z" finished-at="2019-04-14T11:49:46Z">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.PacificPower.Test.FacebookTest@4e268090]" started-at="2019-04-25T07:18:32Z" name="afterMethod" finished-at="2019-04-25T07:18:32Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.PacificPower.Test.FacebookTest@4e268090]" started-at="2019-04-25T07:18:32Z" name="afterClass" finished-at="2019-04-25T07:18:32Z" duration-ms="732" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="closeReport()[pri:0, instance:com.PacificPower.Test.FacebookTest@4e268090]" started-at="2019-04-25T07:18:32Z" name="closeReport" finished-at="2019-04-25T07:18:33Z" duration-ms="375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeReport -->
       </class> <!-- com.PacificPower.Test.FacebookTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.PacificPower.Test.FacebookTest2">
+        <test-method is-config="true" signature="generateExtentReport()[pri:0, instance:com.PacificPower.Test.FacebookTest2@1bb266b3]" started-at="2019-04-25T07:18:33Z" name="generateExtentReport" finished-at="2019-04-25T07:18:33Z" duration-ms="176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateExtentReport -->
+        <test-method is-config="true" signature="setUpEnvironment()[pri:0, instance:com.PacificPower.Test.FacebookTest2@1bb266b3]" started-at="2019-04-25T07:18:33Z" name="setUpEnvironment" finished-at="2019-04-25T07:18:41Z" duration-ms="8484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpEnvironment -->
+        <test-method is-config="true" signature="berforeMethod(java.lang.reflect.Method)[pri:0, instance:com.PacificPower.Test.FacebookTest2@1bb266b3]" started-at="2019-04-25T07:18:41Z" name="berforeMethod" finished-at="2019-04-25T07:18:41Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.PacificPower.Test.FacebookTest2.clickOnDummy1()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- berforeMethod -->
+        <test-method signature="clickOnDummy1()[pri:0, instance:com.PacificPower.Test.FacebookTest2@1bb266b3]" started-at="2019-04-25T07:18:41Z" name="clickOnDummy1" finished-at="2019-04-25T07:18:42Z" duration-ms="396" status="FAIL">
+          <exception class="junit.framework.AssertionFailedError">
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError
+at junit.framework.Assert.fail(Assert.java:47)
+at junit.framework.Assert.assertTrue(Assert.java:20)
+at junit.framework.Assert.assertTrue(Assert.java:27)
+at com.PacificPower.Utility.Utility.verifyResult(Utility.java:51)
+at com.PacificPower.PageObjects.FacebookHomePage.clickOnDummy(FacebookHomePage.java:24)
+at com.PacificPower.Views.FacebookHomeView.clickOnDummy(FacebookHomeView.java:25)
+at com.PacificPower.Test.FacebookTest2.clickOnDummy1(FacebookTest2.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnDummy1 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.PacificPower.Test.FacebookTest2@1bb266b3]" started-at="2019-04-25T07:18:42Z" name="afterMethod" finished-at="2019-04-25T07:18:42Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="berforeMethod(java.lang.reflect.Method)[pri:0, instance:com.PacificPower.Test.FacebookTest2@1bb266b3]" started-at="2019-04-25T07:18:42Z" name="berforeMethod" finished-at="2019-04-25T07:18:42Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.PacificPower.Test.FacebookTest2.facebookTest2()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- berforeMethod -->
+        <test-method signature="facebookTest2()[pri:0, instance:com.PacificPower.Test.FacebookTest2@1bb266b3]" started-at="2019-04-25T07:18:42Z" name="facebookTest2" finished-at="2019-04-25T07:18:42Z" duration-ms="406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- facebookTest2 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.PacificPower.Test.FacebookTest2@1bb266b3]" started-at="2019-04-25T07:18:42Z" name="afterMethod" finished-at="2019-04-25T07:18:42Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.PacificPower.Test.FacebookTest2@1bb266b3]" started-at="2019-04-25T07:18:42Z" name="afterClass" finished-at="2019-04-25T07:18:43Z" duration-ms="711" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="closeReport()[pri:0, instance:com.PacificPower.Test.FacebookTest2@1bb266b3]" started-at="2019-04-25T07:18:43Z" name="closeReport" finished-at="2019-04-25T07:18:43Z" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeReport -->
+      </class> <!-- com.PacificPower.Test.FacebookTest2 -->
+    </test> <!-- Pacific Power -->
+  </suite> <!-- New Framework Test Suite -->
 </testng-results>

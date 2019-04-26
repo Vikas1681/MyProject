@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [New Framework Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Pacific Power(failed)">
     <classes>
+      <class name="com.PacificPower.Test.FacebookTest2">
+        <methods>
+          <include name="clickOnDummy1"/>
+          <include name="generateExtentReport"/>
+          <include name="afterClass"/>
+          <include name="setUpEnvironment"/>
+          <include name="closeReport"/>
+          <include name="afterMethod"/>
+          <include name="berforeMethod"/>
+        </methods>
+      </class> <!-- com.PacificPower.Test.FacebookTest2 -->
       <class name="com.PacificPower.Test.FacebookTest">
         <methods>
-          <include name="facebookTest1"/>
+          <include name="generateExtentReport"/>
+          <include name="berforeMethod"/>
           <include name="afterClass"/>
+          <include name="closeReport"/>
+          <include name="clickOnDummy"/>
+          <include name="afterMethod"/>
           <include name="setUpEnvironment"/>
         </methods>
       </class> <!-- com.PacificPower.Test.FacebookTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Pacific Power(failed) -->
+</suite> <!-- Failed suite [New Framework Test Suite] -->

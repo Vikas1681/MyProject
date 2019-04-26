@@ -6,14 +6,16 @@ import java.util.Properties;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 
 import com.PacificPower.Utility.CustomReporting;
 import com.PacificPower.Utility.ExcelHelper;
-import com.PacificPower.Utility.ReadConfigFile;
+import com.PacificPower.Utility.ExtentReporterHelper;
 import com.PacificPower.Utility.SetUpEnvironment;
 import com.PacificPower.Utility.Utility;
 
@@ -29,6 +31,7 @@ public class BaseTest extends Pojo {
 	CustomReporting customReporting;
 	ExcelHelper excelHelper;
 	String excelFileName;
+	ExtentReporterHelper extentReporterHelper;
 	
 
 	
@@ -74,7 +77,29 @@ public class BaseTest extends Pojo {
 		excelHelper.loadTestData(RMIDNO);
 	}
 	
+//	@AfterSuite
+//	public void closeExtentReport() {
+//		this.getExtentReports().flush();
+//	}
 	
+	@BeforeClass
+	public void generateExtentReport() {
+		System.out.println("Inside Before Suite");
+		this.extentReporterHelper = new ExtentReporterHelper(this);
+		this.setObjExtentReporterHelper(this.extentReporterHelper);
+		this.extentReporterHelper.generateReport();
+	}
 
+	@AfterClass
+	public void closeReport() {
+		this.getExtentReports().flush();
+	}
+	
+	@AfterMethod
+	public void afterMethod() {
+		System.out.println("extent reporter object"+this.getObjExtentReporterHelper());
+		this.getObjExtentReporterHelper().getResult(this.getResultLog());
+	}
+	   
 
 }

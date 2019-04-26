@@ -2,7 +2,7 @@ package com.PacificPower.generic;
 
 import org.openqa.selenium.By;
 
-public class CommonFunction {
+public class  CommonFunction {
 
 	Pojo objPojo;
 

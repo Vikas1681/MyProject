@@ -15,7 +15,7 @@ import com.PacificPower.Utility.Utility;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 
-public class Pojo {
+public class  Pojo {
 
 	WebDriver driver;
 	CommonFunction objCommonFunction;

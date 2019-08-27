@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import com.PacificPower.Views.FacebookHomeView;
 import com.PacificPower.generic.BaseTest;
 
-public class FacebookTest2 extends BaseTest{
+public class FacebookTest2 extends BaseTest {
 
 	FacebookHomeView objFacebookHomeView;
 
@@ -29,18 +29,20 @@ public class FacebookTest2 extends BaseTest{
 	public void facebookTest2() {
 		loadTestData("100");
 		objFacebookHomeView.clickFacebookHomePageEmailField();
+
 	}
 
 	@Test
 	public void clickOnDummy1() {
 		objFacebookHomeView.clickOnDummy();
+
 	}
 
 	@AfterClass
 	public void afterClass() {
 		this.getDriver().quit();
 	}
-	
+
 	@BeforeMethod
 	public void berforeMethod(Method method) {
 		this.setCurrentMethodName(method.getName());

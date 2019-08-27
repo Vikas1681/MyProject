@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,  1 skipped,  1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -113,6 +113,20 @@
                     </div> <!-- method-list-content failed suite-New_Framework_Test_Suite -->
                   </li>
                   <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-New_Framework_Test_Suite" class="hide-methods skipped suite-New_Framework_Test_Suite"> (hide)</a> <!-- hide-methods skipped suite-New_Framework_Test_Suite -->
+                      <a href="#" panel-name="suite-New_Framework_Test_Suite" class="show-methods skipped suite-New_Framework_Test_Suite"> (show)</a> <!-- show-methods skipped suite-New_Framework_Test_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-New_Framework_Test_Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-New_Framework_Test_Suite" title="com.PacificPower.Test.FacebookTest2" class="method navigator-link" hash-for-method="facebookTest2">facebookTest2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-New_Framework_Test_Suite -->
+                  </li>
+                  <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
                       <a href="#" panel-name="suite-New_Framework_Test_Suite" class="hide-methods passed suite-New_Framework_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-New_Framework_Test_Suite -->
@@ -122,11 +136,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-New_Framework_Test_Suite" title="com.PacificPower.Test.FacebookTest" class="method navigator-link" hash-for-method="facebookTest1">facebookTest1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-New_Framework_Test_Suite" title="com.PacificPower.Test.FacebookTest2" class="method navigator-link" hash-for-method="facebookTest2">facebookTest2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-New_Framework_Test_Suite -->
@@ -144,31 +153,6 @@
           <div class="suite-New_Framework_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.PacificPower.Test.FacebookTest2</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickOnDummy1">
-                  </a> <!-- clickOnDummy1 -->
-                  <span class="method-name">clickOnDummy1</span>
-                  <div class="stack-trace">junit.framework.AssertionFailedError
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.assertTrue(Assert.java:20)
-	at junit.framework.Assert.assertTrue(Assert.java:27)
-	at com.PacificPower.Utility.Utility.verifyResult(Utility.java:51)
-	at com.PacificPower.PageObjects.FacebookHomePage.clickOnDummy(FacebookHomePage.java:24)
-	at com.PacificPower.Views.FacebookHomeView.clickOnDummy(FacebookHomeView.java:25)
-	at com.PacificPower.Test.FacebookTest2.clickOnDummy1(FacebookTest2.java:36)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-New_Framework_Test_Suite-class-failed -->
-          <div class="suite-New_Framework_Test_Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
               <span class="class-name">com.PacificPower.Test.FacebookTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -181,19 +165,41 @@
 	at junit.framework.Assert.fail(Assert.java:47)
 	at junit.framework.Assert.assertTrue(Assert.java:20)
 	at junit.framework.Assert.assertTrue(Assert.java:27)
-	at com.PacificPower.Utility.Utility.verifyResult(Utility.java:51)
-	at com.PacificPower.PageObjects.FacebookHomePage.clickOnDummy(FacebookHomePage.java:24)
-	at com.PacificPower.Views.FacebookHomeView.clickOnDummy(FacebookHomeView.java:25)
-	at com.PacificPower.Test.FacebookTest.clickOnDummy(FacebookTest.java:37)
+	at com.PacificPower.Utility.Utility.verifyResult(Utility.java:63)
+	at com.PacificPower.PageObjects.FacebookHomePage.clickOnDummy(FacebookHomePage.java:26)
+	at com.PacificPower.Views.FacebookHomeView.clickOnDummy(FacebookHomeView.java:31)
+	at com.PacificPower.Test.FacebookTest.clickOnDummy(FacebookTest.java:41)
 ... Removed 25 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-New_Framework_Test_Suite-class-failed -->
-          <div class="suite-New_Framework_Test_Suite-class-passed">
+          <div class="suite-New_Framework_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">com.PacificPower.Test.FacebookTest2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnDummy1">
+                  </a> <!-- clickOnDummy1 -->
+                  <span class="method-name">clickOnDummy1</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.PacificPower.Utility.Utility.verifyResult(Utility.java:48)
+	at com.PacificPower.PageObjects.FacebookHomePage.clickOnDummy(FacebookHomePage.java:26)
+	at com.PacificPower.Views.FacebookHomeView.clickOnDummy(FacebookHomeView.java:31)
+	at com.PacificPower.Test.FacebookTest2.clickOnDummy1(FacebookTest2.java:37)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-New_Framework_Test_Suite-class-failed -->
+          <div class="suite-New_Framework_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
               <span class="class-name">com.PacificPower.Test.FacebookTest2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -202,10 +208,15 @@
                   <a name="facebookTest2">
                   </a> <!-- facebookTest2 -->
                   <span class="method-name">facebookTest2</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.PacificPower.Utility.ExtentReporterHelper.getResult(ExtentReporterHelper.java:49)
+	at com.PacificPower.generic.BaseTest.afterMethod(BaseTest.java:98)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-New_Framework_Test_Suite-class-passed -->
+          </div> <!-- suite-New_Framework_Test_Suite-class-skipped -->
           <div class="suite-New_Framework_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -231,6 +242,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;New Framework Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.PacificPower.Utility.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Pacific Power&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.PacificPower.Test.FacebookTest&quot;/&gt;
@@ -278,24 +292,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'clickOnDummy')
 data.setCell(0, 2, 'com.PacificPower.Test.FacebookTest')
-data.setCell(0, 3, 418);
+data.setCell(0, 3, 1430);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'facebookTest1')
 data.setCell(1, 2, 'com.PacificPower.Test.FacebookTest')
-data.setCell(1, 3, 417);
+data.setCell(1, 3, 905);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'facebookTest2')
+data.setCell(2, 1, 'clickOnDummy1')
 data.setCell(2, 2, 'com.PacificPower.Test.FacebookTest2')
-data.setCell(2, 3, 406);
+data.setCell(2, 3, 30);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'clickOnDummy1')
+data.setCell(3, 1, 'facebookTest2')
 data.setCell(3, 2, 'com.PacificPower.Test.FacebookTest2')
-data.setCell(3, 3, 396);
+data.setCell(3, 3, 0);
 window.suiteTableData['New_Framework_Test_Suite']= { tableData: data, tableDiv: 'times-div-New_Framework_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-New_Framework_Test_Suite">
               </div> <!-- times-div-New_Framework_Test_Suite -->
             </div> <!-- times-div -->
@@ -328,87 +342,73 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setUpEnvironment</span>
-                <span class="method-start">239 ms</span>
+                <span class="method-start">253 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">berforeMethod(public void com.PacificPower.Test.FacebookTest.clickOnDummy())</span>
-                <span class="method-start">16529 ms</span>
+                <span class="method-start">30313 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">clickOnDummy</span>
-                <span class="method-start">16531 ms</span>
+                <span class="method-start">30317 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">16954 ms</span>
+                <span class="method-start">31818 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">berforeMethod(public void com.PacificPower.Test.FacebookTest.facebookTest1())</span>
-                <span class="method-start">17023 ms</span>
+                <span class="method-start">31823 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">facebookTest1</span>
-                <span class="method-start">17023 ms</span>
+                <span class="method-start">31823 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">17442 ms</span>
+                <span class="method-start">32730 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">17443 ms</span>
+                <span class="method-start">32732 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">closeReport</span>
-                <span class="method-start">18175 ms</span>
+                <span class="method-start">33594 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.PacificPower.Test.FacebookTest2</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">generateExtentReport</span>
-                <span class="method-start">18566 ms</span>
+                <span class="method-start">36485 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setUpEnvironment</span>
-                <span class="method-start">18742 ms</span>
+                <span class="method-start">36996 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">berforeMethod(public void com.PacificPower.Test.FacebookTest2.clickOnDummy1())</span>
-                <span class="method-start">27226 ms</span>
+                <span class="method-start">51300 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">clickOnDummy1</span>
-                <span class="method-start">27227 ms</span>
+                <span class="method-start">51301 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">27626 ms</span>
+                <span class="method-start">51333 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">berforeMethod(public void com.PacificPower.Test.FacebookTest2.facebookTest2())</span>
-                <span class="method-start">27627 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">facebookTest2</span>
-                <span class="method-start">27627 ms</span>
+                <span class="method-start">-1565860451887 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">28035 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">28036 ms</span>
-              </div> <!-- configuration-class after -->
-              <div class="configuration-class after">
-                <span class="method-name">closeReport</span>
-                <span class="method-start">28747 ms</span>
-              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

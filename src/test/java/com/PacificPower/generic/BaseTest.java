@@ -6,12 +6,9 @@ import java.util.Properties;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
 
 import com.PacificPower.Utility.CustomReporting;
 import com.PacificPower.Utility.ExcelHelper;
@@ -97,9 +94,11 @@ public class BaseTest extends Pojo {
 	
 	@AfterMethod
 	public void afterMethod() {
-		System.out.println("extent reporter object"+this.getObjExtentReporterHelper());
+//		System.out.println("extent reporter object"+this.getObjExtentReporterHelper());
 		this.getObjExtentReporterHelper().getResult(this.getResultLog());
 	}
+	
+	
 	   
 
 }

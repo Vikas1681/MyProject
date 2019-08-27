@@ -3,10 +3,10 @@ package com.PacificPower.Utility;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Iterator;
+import java.util.Map.Entry;
+import java.util.Set;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
@@ -21,16 +21,17 @@ public class ExcelHelper {
 	Pojo objPojo;
 	FileInputStream fileInputStream;
 	Workbook book;
-	HashMap<String, String> dataPool = new HashMap<String, String>();
 	HashMap<String, String> rowData = new HashMap<String, String>();
 	String excelFileName = "";
 	String rmidNo;
 	ScreenshotHelper screenshotHelper = new ScreenshotHelper();
+	int rowCount;
 
 	public ExcelHelper(Pojo objPojo){
 		this.objPojo= objPojo;
 	}
-	public void loadExcelFile(String excelFileName) {
+	
+	public Workbook loadExcelFile(String excelFileName) {
 		this.excelFileName = excelFileName;
 		try {
 			fileInputStream = new FileInputStream(
@@ -51,20 +52,17 @@ public class ExcelHelper {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		this.rowCount= book.getSheet("Sheet1").getLastRowNum();
+		return book;
 	}
 
-	public int getTotalRowsCount() {
-		this.loadExcelFile(excelFileName);
-		return book.getSheet("Sheet1").getLastRowNum();
-	}
+
 
 	public HashMap<String, String> loadTestData(String rmidNo) {
-		this.loadExcelFile(excelFileName);
-		int rows = this.getTotalRowsCount();
-		for (int i = 0; i < rows; i++) {
-
+		for (int i = 0; i < this.rowCount; i++) {
 			String obtainedRMIDNo = book.getSheet("Sheet1").getRow(i).getCell(0).getStringCellValue();
 			if (obtainedRMIDNo.equals(rmidNo)) {
+				objPojo.setCurrentRMIDRowNo(i+1);
 				Iterator<Cell> cellCountKeys = book.getSheet("Sheet1").getRow(i).cellIterator();
 				for (int j = 0; j < book.getSheet("Sheet1").getRow(i).getLastCellNum(); j++) {
 
@@ -80,6 +78,11 @@ public class ExcelHelper {
 
 		}
 		objPojo.setRowData(rowData);
+		Iterator<Entry<String, String>> itr = rowData.entrySet().iterator();
+		while(itr.hasNext()) {
+			System.out.println(itr.next());
+		}
+		
 		return this.rowData = rowData;
 
 	}

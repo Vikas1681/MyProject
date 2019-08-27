@@ -30,20 +30,26 @@ public class FacebookTest extends BaseTest {
 	public void facebookTest1() {
 		loadTestData("100");
 		objFacebookHomeView.clickFacebookHomePageEmailField();
+		objFacebookHomeView.setFacebookHomePageEmail();
+		objFacebookHomeView.clickFacebookHomePagePassword();
+		objFacebookHomeView.setFacebookHomePagePassword();
+
 	}
 
 	@Test
 	public void clickOnDummy() {
 		objFacebookHomeView.clickOnDummy();
+
 	}
 
 	@AfterClass
 	public void afterClass() {
 		this.getDriver().quit();
 	}
-	
+
 	@BeforeMethod
 	public void berforeMethod(Method method) {
 		this.setCurrentMethodName(method.getName());
+		this.setExtent(this.getExtentReports().createTest(this.getCurrentMethodName()));
 	}
 }

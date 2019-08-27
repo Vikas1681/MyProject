@@ -1,5 +1,6 @@
 package com.PacificPower.generic;
 
+import java.sql.Connection;
 import java.util.HashMap;
 import java.util.Properties;
 
@@ -15,7 +16,7 @@ import com.PacificPower.Utility.Utility;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 
-public class  Pojo {
+public class Pojo {
 
 	WebDriver driver;
 	CommonFunction objCommonFunction;
@@ -33,6 +34,9 @@ public class  Pojo {
 	String methodName = "";
 	boolean resultLog;
 	ExtentReporterHelper objExtentReporterHelper;
+	int currentRMIDRowNo;
+	private static Connection connection;
+	private String currentRunningStep;
 
 	public void setWebDriver(WebDriver driver) {
 		this.driver = driver;
@@ -150,16 +154,40 @@ public class  Pojo {
 	public void setResultLog(boolean resultLog) {
 		this.resultLog = resultLog;
 	}
-	
+
 	public boolean getResultLog() {
 		return this.resultLog;
 	}
-	
+
 	public void setObjExtentReporterHelper(ExtentReporterHelper objExtentReporterHelper) {
 		this.objExtentReporterHelper = objExtentReporterHelper;
 	}
-	
+
 	public ExtentReporterHelper getObjExtentReporterHelper() {
 		return this.objExtentReporterHelper;
+	}
+
+	public void setCurrentRMIDRowNo(int currentRMIDRowNo) {
+		this.currentRMIDRowNo = currentRMIDRowNo;
+	}
+
+	public int getCurrentRMIDRowNo() {
+		return currentRMIDRowNo;
+	}
+
+	public void setDatabase(Connection connection) {
+		this.connection = connection;
+	}
+
+	public Connection getDatabase() {
+		return this.connection;
+	}
+
+	public void setCurrentRunningStep(String currentRunningStep) {
+		this.currentRunningStep = currentRunningStep;
+	}
+
+	public String getCurrentRunningStep() {
+		return this.currentRunningStep;
 	}
 }

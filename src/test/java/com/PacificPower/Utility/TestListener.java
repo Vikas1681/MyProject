@@ -9,7 +9,7 @@ import com.PacificPower.generic.BaseTest;
 public class TestListener  extends BaseTest implements ITestListener {
 
 	public void onTestStart(ITestResult result) {
-		// TODO Auto-generated method stub
+		System.out.println("Test Started");
 		
 	}
 
@@ -19,7 +19,8 @@ public class TestListener  extends BaseTest implements ITestListener {
 	}
 
 	public void onTestFailure(ITestResult result) {
-		// TODO Auto-generated method stub
+		System.out.println(result.getMethod().getMethodName()+" "+ "is failed");
+		
 		
 	}
 
@@ -34,7 +35,7 @@ public class TestListener  extends BaseTest implements ITestListener {
 	}
 
 	public void onStart(ITestContext context) {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
